@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:each="shop : ${shops}">
+        <h2 th:text="${shop.name + '(' + shop.branchName + ')'}"/>
+        <div th:each="theme : ${shop.themeInfos}">
+            <h3 th:text="${theme.title}"/>
+            <ul th:each="time : ${theme.availableTimes}">
+                <li th:text="${time}"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

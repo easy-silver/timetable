@@ -8,11 +8,8 @@
     <body>
         <h1>강남 방탈출 매장</h1>
         <ul>
-            <li>
-                <a href="/gangnam/next-edition">넥스트에디션</a>
-            </li>
-            <li>
-                <a href="/gangnam/secret-garden">비밀의화원</a>
+            <li th:each="shop : ${shops}">
+                <a href="/gangnam/next-edition" th:text="${shop.name}" />
             </li>
         </ul>
     </body>

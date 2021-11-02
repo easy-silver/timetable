@@ -8,6 +8,7 @@ import org.jsoup.select.Elements;
 import org.springframework.stereotype.Repository;
 import timo.escape.timetable.model.ShopInfo;
 import timo.escape.timetable.model.ThemeInfo;
+import timo.escape.timetable.model.domain.NextEdition;
 
 import java.io.IOException;
 import java.util.ArrayList;
